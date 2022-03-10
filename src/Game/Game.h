@@ -1,20 +1,20 @@
 #pragma once
 
-#include "../Graphics/Window/Window.h"
+#include "Graphics/Window/Window.h"
+#include "Level.h"
+#include "Player.h"
+#include "Textbox.h"
 
 class Game
 {
 private:
 	Window _window;
+	Level _lvl;
+	Player _plr;
+	Textbox _txtbox;
 
 	sf::Clock _clock;
-	sf::Time _elapsed;
-
-	sf::Texture _plrTexture;
-	sf::Sprite _plr;
-	sf::Vector2i _inc;
-
-	void movePlayer();
+	float _elapsed;
 public:
 	Game();
 	~Game();

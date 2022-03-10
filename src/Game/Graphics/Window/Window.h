@@ -33,5 +33,6 @@ public:
 	bool isDone();
 	bool isFullscreen();
 	sf::Vector2u getWindowSize();
+	sf::RenderWindow *getRenderWindow();
 };
 

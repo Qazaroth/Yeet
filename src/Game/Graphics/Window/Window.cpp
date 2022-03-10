@@ -7,7 +7,6 @@ void Window::setup(const std::string title, const sf::Vector2u &size)
 	_size = size;
 	_isFullscreen = false;
 	_isDone = false;
-	_window.setFramerateLimit(60);
 
 	create();
 }
@@ -91,4 +90,9 @@ bool Window::isFullscreen()
 sf::Vector2u Window::getWindowSize()
 {
 	return _size;
+}
+
+sf::RenderWindow *Window::getRenderWindow()
+{
+	return &_window;
 }

@@ -20,12 +20,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Game\Game.h" />
-    <ClInclude Include="src\Graphics\Window\Window.h" />
+    <ClInclude Include="src\Game\Level.h" />
+    <ClInclude Include="src\Game\Player.h" />
+    <ClInclude Include="src\Game\Textbox.h" />
+    <ClInclude Include="src\Game\Graphics\Window\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Game\Game.cpp" />
+    <ClCompile Include="src\Game\Level.cpp" />
+    <ClCompile Include="src\Game\Textbox.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\Graphics\Window\Window.cpp" />
+    <ClCompile Include="src\Game\Graphics\Window\Window.cpp" />
+    <ClCompile Include="src\Game\Player.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
